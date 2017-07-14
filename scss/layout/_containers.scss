@@ -1,0 +1,20 @@
+.portfolio, .about-me, .about-work, .contact {
+  width: 92%;
+  margin: 0 auto;
+}
+
+@media (min-width: 935px) {
+  .portfolio, .about, .contact {
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1em .5em;
+  }
+}
+@media (min-width: 1180px) {
+  .portfolio, .about, .contact {
+    border-spacing: 1.2em .7em;
+  }
+}

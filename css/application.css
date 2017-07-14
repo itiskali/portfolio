@@ -82,33 +82,25 @@ hr {
   display: inline-block;
   border-bottom: 1px #d25458 solid; }
 
+.intro, div.row-3, .project-info, aside h1, aside h2, aside p, .skills ul, .contact ul, .email, .linked, .facebook {
+  text-align: center; }
+
 /* Header Section ------------------------ */
-body > header, .project-info {
+.main-header, .project-info {
   background-color: #f8f8f7;
   padding: 1em 1em 0;
   overflow: auto; }
 
 .logo {
   max-width: 423px;
-  /*Max-width*/
   margin: 0 auto; }
+
+.intro {
+  font-size: .85em;
+  font-style: italic;
+  color: #e6a503; }
 
 /* Portfolio Section ------------------------ */
-.portfolio, .about-me, .about-work, .contact {
-  width: 92%;
-  margin: 0 auto; }
-
-@media (min-width: 935px) {
-  .portfolio, .about, .contact {
-    width: 98%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 1em .5em; } }
-@media (min-width: 1180px) {
-  .portfolio, .about, .contact {
-    border-spacing: 1.2em .7em; } }
 .portfolio div > h1, .about div > h1, .contact div > h1 {
   font-size: 1.4em;
   font-weight: normal;
@@ -146,9 +138,6 @@ body > header, .project-info {
     border-bottom: 7px #0ea6b4 solid; } }
 div.row article:nth-child(2) {
   margin-top: .5em; }
-
-div.row-3 {
-  text-align: center; }
 
 @media (min-width: 935px) {
   div.row-3 article {
@@ -213,8 +202,7 @@ article > header a:hover h1 {
 .project-info {
   margin-top: .2em;
   position: relative;
-  padding-bottom: .8em;
-  text-align: center; }
+  padding-bottom: .8em; }
 
 @media (min-width: 935px) {
   .project-info {
@@ -258,6 +246,31 @@ article > header a:hover h1 {
 .project-info p {
   display: inline; }
 
+aside {
+  background-color: #f8f8f7;
+  padding: .5em .8em .1em;
+  margin: 1.25em 0; }
+
+@media (min-width: 935px) {
+  aside {
+    display: table-cell;
+    font-size: .8em;
+    vertical-align: middle; } }
+@media (min-width: 1180px) {
+  aside {
+    font-size: 1em; } }
+aside h1, aside h2 {
+  padding: .4em 0 .2em;
+  text-transform: uppercase;
+  color: #303030; }
+
+aside h1 {
+  color: #0ea6b4; }
+
+aside p:nth-child(2) {
+  padding-bottom: 1em;
+  border-bottom: 1px #bcbabb dashed; }
+
 .skills {
   border: 1px dashed #bcbabb;
   padding-bottom: .7em; }
@@ -282,9 +295,6 @@ article > header a:hover h1 {
 @media (min-width: 1180px) {
   .skills h1 {
     padding-top: .2em; } }
-.skills ul {
-  text-align: center; }
-
 @media (min-width: 1180px) {
   .skills ul {
     padding-top: .2em; } }
@@ -428,8 +438,7 @@ article > header a:hover h1 {
     content: "\e661";
     padding-left: .2em; } }
 .contact ul {
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
 
 @media (min-width: 935px) {
   .contact ul {
@@ -457,8 +466,7 @@ article > header a:hover h1 {
 .email, .linked, .facebook {
   background-color: #f8f8f7;
   border: 1px #bcbabb solid;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 @media (min-width: 560px) {
   .email, .linked, .facebook {
@@ -513,12 +521,6 @@ small {
   src: url("fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("fonts/themify.woff?-fvbane") format("woff"), url("fonts/themify.ttf?-fvbane") format("truetype"), url("fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal; }
-.intro {
-  font-size: .85em;
-  font-style: italic;
-  text-align: center;
-  color: #e6a503; }
-
 nav {
   margin-top: .7em;
   text-align: center;

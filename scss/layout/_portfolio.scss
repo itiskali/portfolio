@@ -1,19 +1,5 @@
 /* Portfolio Section ------------------------ */
-.portfolio, .about-me, .about-work, .contact {
-  width: 92%;
-  margin: 0 auto; }
 
-@media (min-width: 935px) {
-  .portfolio, .about, .contact {
-    width: 98%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 1em .5em; } }
-@media (min-width: 1180px) {
-  .portfolio, .about, .contact {
-    border-spacing: 1.2em .7em; } }
 
 .portfolio div > h1, .about div > h1, .contact div > h1 {
   font-size: 1.4em;
@@ -55,7 +41,8 @@
     margin-top: .5em; }
 
   div.row-3 {
-    text-align: center; }
+    @extend %centered;
+  }
 
   @media (min-width: 935px) {
     div.row-3 article {
@@ -125,7 +112,8 @@
     margin-top: .2em;
     position: relative;
     padding-bottom: .8em;
-    text-align: center; }
+    @extend %centered;
+  }
     @media (min-width: 935px) {
       .project-info {
         z-index: -1;

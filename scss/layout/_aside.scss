@@ -14,14 +14,15 @@ aside {
 aside h1, aside h2 {
   padding: .4em 0 .2em;
   text-transform: uppercase;
-  text-align: center;
+  @extend %centered;
   color: #303030; }
 
 aside h1 {
   color: #0ea6b4; }
 
 aside p {
-  text-align: center; }
+  @extend %centered;
+}
 
 aside p:nth-child(2) {
   padding-bottom: 1em;

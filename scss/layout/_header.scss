@@ -1,10 +1,17 @@
 /* Header Section ------------------------ */
 
-body > header, .project-info {
+.main-header, .project-info {
   background-color: #f8f8f7;
   padding: 1em 1em 0;
-  overflow: auto; }
-  .logo {
-    max-width: 423px;
-    /*Max-width*/
-    margin: 0 auto; }
+  overflow: auto;
+}
+.logo {
+  max-width: 423px;
+  margin: 0 auto;
+}
+.intro {
+  font-size: .85em;
+  font-style: italic;
+  @extend %centered;
+  color: #e6a503;
+}

@@ -23,7 +23,8 @@
       padding-top: .2em; } }
 
 .skills ul {
-  text-align: center; }
+  @extend %centered;
+}
   @media (min-width: 1180px) {
     .skills ul {
       padding-top: .2em; } }
