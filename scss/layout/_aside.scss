@@ -1,0 +1,28 @@
+aside {
+  background-color: #f8f8f7;
+  padding: .5em .8em .1em;
+  margin: 1.25em 0; }
+  @media (min-width: 935px) {
+    aside {
+      display: table-cell;
+      font-size: .8em;
+      vertical-align: middle; } }
+  @media (min-width: 1180px) {
+    aside {
+      font-size: 1em; } }
+
+aside h1, aside h2 {
+  padding: .4em 0 .2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #303030; }
+
+aside h1 {
+  color: #0ea6b4; }
+
+aside p {
+  text-align: center; }
+
+aside p:nth-child(2) {
+  padding-bottom: 1em;
+  border-bottom: 1px #bcbabb dashed; }

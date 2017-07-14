@@ -64,11 +64,34 @@ em {
 .hide {
   display: none; }
 
+hr {
+  border: 0;
+  border-bottom: 1px dashed #bcbabb;
+  margin: 1.25em 0; }
+
+@media (min-width: 560px) {
+  hr {
+    display: none; } }
+.animation {
+  display: none; }
+
+@media (min-width: 935px) {
+  .animation {
+    display: table-cell; } }
+.text-link {
+  display: inline-block;
+  border-bottom: 1px #d25458 solid; }
+
 /* Header Section ------------------------ */
 body > header, .project-info {
   background-color: #f8f8f7;
   padding: 1em 1em 0;
   overflow: auto; }
+
+.logo {
+  max-width: 423px;
+  /*Max-width*/
+  margin: 0 auto; }
 
 /* Portfolio Section ------------------------ */
 .portfolio, .about-me, .about-work, .contact {
@@ -490,6 +513,23 @@ small {
   src: url("fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("fonts/themify.woff?-fvbane") format("woff"), url("fonts/themify.ttf?-fvbane") format("truetype"), url("fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal; }
+.intro {
+  font-size: .85em;
+  font-style: italic;
+  text-align: center;
+  color: #e6a503; }
+
+nav {
+  margin-top: .7em;
+  text-align: center;
+  border-top: 3px #e3e3e3 double;
+  border-bottom: 3px #e3e3e3 double; }
+
+nav ul li {
+  display: inline-block;
+  padding: .5em;
+  font-size: .9em; }
+
 .button {
   font-size: .9em;
   font-style: italic;
