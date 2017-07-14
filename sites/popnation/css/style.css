@@ -1,0 +1,407 @@
+/***
+TYPOGRAPHY
+***/
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 2892884, 2014-09-30T22:33:13-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: HelveticaNeueLTStd-BlkCn by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-97-black-condensed/
+ * Copyright: Copyright &#x00A9; 1990, 2002 Adobe Systems Incorporated.  All Rights Reserved. &#x00A9; 1981, 2002 Heidelberger Druckmaschinen AG. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2892884
+ *
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2c2454");
+
+
+@font-face {font-family: 'HelveticaNeueLTStd-BlkCn';src: url('../webfonts/2C2454_0_0.eot');src: url('../webfonts/2C2454_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2C2454_0_0.woff') format('woff'),url('../webfonts/2C2454_0_0.ttf') format('truetype');}
+
+/***
+RESET
+***/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -mox-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display:block;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover {
+    text-decoration: underline
+}
+ol,
+ul {
+    list-style: none
+}
+blockquote,
+q {
+    quotes: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:focus {
+    outline: none
+}
+
+/***
+Basic Styles
+***/
+
+body {
+    background: #1ac0e3 url(../img/top-detail-color.gif) top center no-repeat;
+    padding-top: 3px;
+    background-color: #ffffff;
+    color: #4d4d4d;
+    font: 62.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.HelveticaNeueLTStd-BlkCn {
+    font-family: HelveticaNeueLTStd-BlkCn;
+    font-weight: normal;
+    font-style: normal;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.rw-break {
+    display: block;
+}
+a {
+    color: rgb(157,0,0);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    padding-bottom: 1.6em;
+}
+
+p span {
+    color: #000;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+.singer {
+    display: none;
+}
+footer {
+    background-color: #000000;
+}
+/***
+Header
+***/
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding-bottom: 2.5em;
+    background: #000000 url(../img/black-gradient.png) bottom repeat-x;
+}
+header .inner h1 img {
+    max-width: 100%;
+}
+
+/***
+Social Icons
+***/
+.socialmedia {
+    background: #000 url(../img/dots-pattern.png) repeat;
+    padding: 2em 0;
+}
+.social {
+    width: 98%;
+    max-width: 400px;
+    background: #000000 url(../img/slant-pattern.png) repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.social h1 {
+    font-size: 1.4em;
+}
+.social ul {
+    list-style: none;
+    text-align: center;
+    margin: 15px auto;
+    overflow: auto;
+}
+
+.social ul li {
+    display: inline-block;
+    width: 15%;
+    max-width: 55px;
+}
+.social ul li a {
+    background-size: 100%;
+    display: block;
+}
+.social ul li a img {
+    width: 100%;
+    max-width: 100%;
+}
+/***
+CONTENT
+***/
+/*** Previews ***/
+.callout {
+    background: url(../img/gradient.png) 0 100% repeat-x;
+    text-align: center;
+    padding: 3em 0 3.5em 0;
+}
+.previews {
+    width: 98%;
+    margin: 0 auto;
+}
+.previews h2 {
+    color: #1ac0e3;
+    font-size: 4.2em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.location {
+    width: 70%;
+    margin: 0 auto;
+}
+.location img {
+    max-width: 100%;
+}
+/*** Main Copy***/
+.copy {
+    padding: 1.8em 3em 1em 3em;
+    margin-top: 2em;
+}
+
+.tickets {
+    background-color: #1ac0e3;
+    padding: 2.5em 0;
+}
+
+.tickets h3 {
+    color: #fff;
+    font-size: 4.5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-bottom: .5em;
+}
+
+.tickets a {
+    text-indent: -9999px;
+    background: url(../img/btn-backg.png) 0 0 no-repeat;
+    display: block;
+    width: 302px;
+    height: 93px;
+    margin: 0 auto;
+}
+.tickets a:hover {
+    background-position: 0 106%;
+}
+
+.signup {
+    background-color: #000;
+    padding: 2.5em 0;
+    text-align: center;
+}
+
+.signup h4 {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+small {
+    margin-top: 2em;
+    display: block;
+    clear: both;
+    color: #636363;
+    font-size: 1em;
+    font-style: italic;
+}
+
+form {
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+input[type="email"] {
+    background-color: #fff;
+    border: 0;
+    padding: .5em;
+    width: 225px;
+    font-size: 1.5em;
+}
+
+button[type="submit"] {
+    font-size: 1.5em;
+    line-height: 1em;
+    background-color: #6f227e;
+    text-transform: uppercase;
+    border: 0;
+    color: #fff;
+    padding: .62em;
+}
+#formSuccessMessage {
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+#formErrorMessage {
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+/***
+    Media Queries
+***/
+@media all and (min-width: 700px) {
+.rw-break {
+    display: none;
+}
+.copy {
+    padding: 4em;
+}
+}
+
+@media all and (min-width: 750px) {
+.rw-break {
+    display: block;
+}
+.center{
+    width: 50%;
+    max-width: 700px;
+    float: right;
+    text-align: center;
+}
+.callout {
+    position: relative;
+    padding-bottom:15px;
+}
+.callout .inner .previews {
+    float: right;
+    width: 50%;
+}
+.previews {
+    padding: 1.5em 0;
+}
+.location {
+    width: 50%;
+}
+.singer {
+    display: block;
+    position: absolute;
+    bottom:3px;
+    float: left;
+    width: 50%;
+}
+.singer img {
+    max-width: 100%;
+    float: left;
+}
+.copy {
+    padding: 1.5em;
+}
+
+.copy p:first-child {
+    float: left;
+    width: 50%;
+    padding: 1em 1em 2em 2em;
+}
+.copy p:last-child {
+    float: right;
+    width: 50%;
+    padding: 1em 2em 2em 1.5em;
+}
+.tickets {
+    float: right;
+    width: 50%;
+}
+.signup {
+    float: left;
+    width: 50%;
+}
+}
+@media all and (min-width: 1000px) {
+header h1 {
+    float: right;
+    width: 60%;
+}
+.tickets  {
+    padding-bottom:11em;
+}
+}
+
+@media all and (min-width: 1100px) {
+header h1 {
+    width: 50%;
+}
+.rw-break {
+    display: none;
+}
+}
