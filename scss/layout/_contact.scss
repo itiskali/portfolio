@@ -1,0 +1,106 @@
+/* Contact Me Section ------------------------ */
+
+@media (min-width: 935px) {
+  .contact div {
+    width: 100%;
+    display: table; } }
+
+.contact div > h1 {
+  background-color: #d25458; }
+  @media (min-width: 935px) {
+    .contact div > h1 {
+      display: table-cell;
+      width: 30%;
+      font-size: 2em;
+      background-color: #fff;
+      color: #d25458;
+      border: 7px #d25458 solid;
+      vertical-align: middle; } }
+
+@media (min-width: 935px) {
+  .contact div > h1:after {
+    font: .8em 'themify';
+    content: "\e661";
+    padding-left: .2em; } }
+
+.contact ul {
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 935px) {
+    .contact ul {
+      display: table-cell;
+      width: 75%; } }
+
+@media (min-width: 560px) {
+  .contact ul li {
+    margin-right: 1%; } }
+
+@media (min-width: 560px) {
+  .contact ul li:last-child {
+    margin-right: 0; } }
+
+.contact div ul li a {
+  display: block;
+  height: 100%; }
+
+.email {
+  width: 65%;
+  height: 186px;
+  float: right; }
+
+.linked, .facebook {
+  width: 30%;
+  height: 85px; }
+
+.email, .linked, .facebook {
+  background-color: #f8f8f7;
+  border: 1px #bcbabb solid;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 560px) {
+    .email, .linked, .facebook {
+      float: none;
+      display: inline-block;
+      width: 32%;
+      height: 120px; } }
+
+.ti-linkedin:after, .ti-facebook:after, .ti-email:after {
+  font: 3em 'themify';
+  content: "\e735";
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  margin-left: -30px;
+  color: #d25458;
+  padding: 0; }
+  @media (min-width: 560px) {
+    .ti-linkedin:after, .ti-facebook:after, .ti-email:after {
+      top: 25%;
+      font-size: 3.2em;
+      margin-left: -35px; } }
+
+.ti-facebook:after {
+  content: "\e741"; }
+
+.ti-email:after {
+  font-size: 5em;
+  content: "\e75a";
+  top: 25%;
+  margin-left: -55px; }
+  @media (min-width: 560px) {
+    .ti-email:after {
+      top: 15%;
+      margin-left: -50px; } }
+
+.contact ul li:nth-child(2) {
+  margin-bottom: 1em; }
+  @media (min-width: 560px) {
+    .contact ul li:nth-child(2) {
+      margin-bottom: 0; } }
+
+small {
+  font-size: .6em;
+  text-align: center;
+  display: block;
+  padding: 4em 0 1em;
+  clear: both; }

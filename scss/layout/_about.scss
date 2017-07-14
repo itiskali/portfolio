@@ -1,0 +1,98 @@
+.about {
+  background-color: #f8f8f7;
+  padding: .3em 0 1em;
+  position: relative; }
+  @media (min-width: 935px) {
+    .about {
+      background-color: #fff;
+      padding: 0 1em; } }
+  @media (min-width: 1180px) {
+    .about {
+      padding: 0 1.3em; } }
+
+@media (min-width: 935px) {
+  .about-me, .about-work, .about div > h1, .about-work > h2 {
+    margin: 0;
+    vertical-align: top; } }
+
+.about div > h1 {
+  background-color: #e6a503; }
+  @media (min-width: 935px) {
+    .about div > h1 {
+      font-size: 2em;
+      background-color: #fff;
+      color: #e6a503;
+      border: 7px #e6a503 solid;
+      border-bottom: 0;
+      border-left: 0;
+      padding: .5em 1em .8em 0;
+      text-align: right; } }
+
+@media (min-width: 935px) {
+  .about div > h1 span {
+    border-bottom: 7px #e6a503 solid;
+    padding-left: .2em; } }
+
+@media (min-width: 1180px) {
+  .about div > h1:before {
+    font: .8em 'themify';
+    content: "\e662 "; } }
+
+.about h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-bottom: 1px dashed #bcbabb;
+  display: inline-block;
+  padding: .8em 0 .1em 4%; }
+  @media (min-width: 935px) {
+    .about h2 {
+      font-size: 1.5em;
+      border-color: #e6a503; } }
+
+.about p {
+  margin-top: 1em; }
+
+.about-work {
+  margin-bottom: 3.5em; }
+  @media (min-width: 935px) {
+    .about-work {
+      display: table-cell;
+      width: 65%;
+      float: left;
+      background-color: #f8f8f7;
+      padding: 0.5em 2em 1em;
+      border-left: 7px #e6a503 solid;
+      margin-bottom: 0; } }
+
+@media (min-width: 935px) {
+  .about-work p {
+    padding-left: 1.7em; } }
+
+@media (min-width: 935px) {
+  .about-me {
+    display: table-cell;
+    float: right;
+    width: 33%;
+    vertical-align: middle; } }
+
+@media (min-width: 935px) {
+  .about-me p {
+    padding: .4em 1em 2em;
+    text-align: left;
+    line-height: 1.3em; } }
+
+.about-me > .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto 1em;
+  text-transform: uppercase;
+  color: #e6a503;
+  font-weight: bold;
+  width: 210px;
+  padding: .5em; }
+  @media (min-width: 935px) {
+    .about-me > .button {
+      position: relative; } }

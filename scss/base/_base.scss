@@ -1,0 +1,67 @@
+/* Base Styles ------------------------ */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font: 17px/1 "ff-meta-web-pro", sans-serif; }
+  @media (min-width: 935px) {
+    body {
+      border: 10px solid #303030; } }
+
+iframe {
+  border: 0; }
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  display: block; }
+
+
+h1, h2, h3, h4, p {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  color: inherit;
+  transition: .2s;
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  height: auto;
+  border: 0; }
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center; }
+
+  p {
+    font: 1em/1.2em Georgia, Times, "Times New Roman", serif;
+    margin: .5em 0;
+    color: #303030; }
+
+  em {
+    font-style: italic; }
+
+  .r-br {
+    display: none; }
+    @media (min-width: 935px) {
+      .r-br {
+        display: block; } }
+
+.hide {
+          display: none; }
