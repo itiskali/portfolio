@@ -1,10 +1,11 @@
-.portfolio, .about__me, .about__work, .contact {
+/* Containers Style ------------------------ */
+
+.portfolio, .about-section__header, .about-section__story, .about-section__work, .contact {
   width: 92%;
   margin: 0 auto;
-  outline: blue 1px solid;
 }
 
-@media (min-width: 935px) {
+@media screen and (min-width: 935px) {
   .portfolio, .about, .contact {
     width: 98%;
     max-width: 1200px;
@@ -14,7 +15,7 @@
     border-spacing: 1em .5em;
   }
 }
-@media (min-width: 1180px) {
+@media screen and (min-width: 1180px) {
   .portfolio, .about, .contact {
     border-spacing: 1.2em .7em;
   }

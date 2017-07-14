@@ -1,54 +1,64 @@
+/* Skills Section ------------------------ */
+
 .skills {
   border: 1px dashed #bcbabb;
-  padding-bottom: .7em; }
-  @media (min-width: 560px) {
-    .skills {
-      padding-bottom: 1em; } }
-  @media (min-width: 935px) {
-    .skills {
-      width: 25%;
-      font-size: .9em; } }
-  @media (min-width: 1180px) {
-    .skills {
-      font-size: 1.10em;
-      padding-bottom: .2em; } }
+  padding-bottom: .7em;
+
+  @media screen and (min-width: 560px) {
+    padding-bottom: 1em;
+  }
+  @media screen and (min-width: 935px) {
+    width: 25%;
+    font-size: .9em;
+  }
+  @media screen and (min-width: 1180px) {
+    font-size: 1.10em;
+    padding-bottom: .2em;
+  }
+}
 
 .skills h1 {
-  margin-bottom: .6em; }
-  @media (min-width: 935px) {
-    .skills h1 {
-      margin-bottom: .2em; } }
-  @media (min-width: 1180px) {
-    .skills h1 {
-      padding-top: .2em; } }
+  margin-bottom: .6em;
+
+  @media screen and (min-width: 935px) {
+    margin-bottom: .2em;
+  }
+  @media screen and (min-width: 1180px) {
+    padding-top: .2em;
+  }
+}
 
 .skills ul {
   @extend %centered;
+
+  @media screen and (min-width: 1180px) {
+    padding-top: .2em;
+  }
 }
-  @media (min-width: 1180px) {
-    .skills ul {
-      padding-top: .2em; } }
 
 .skills ul li {
   font-size: .9em;
   display: inline-block;
   padding: .3em;
-  margin-bottom: .3em; }
+  margin-bottom: .3em;
+
   @media (min-width: 935px) {
-    .skills ul li {
-      display: block;
-      margin-bottom: 0;
-      padding-bottom: .2em;
-      padding-left: 1.7em;
-      text-align: left; } }
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: .2em;
+    padding-left: 1.7em;
+    text-align: left;
+  }
   @media (min-width: 1180px) {
-    .skills ul li {
-      padding-left: 3em;
-      padding-bottom: .5em; } }
+    padding-left: 3em;
+    padding-bottom: .5em;
+  }
+}
 
 .skills ul li::before {
   content: url(../img/diamond.png);
   width: 15px;
   height: 15px;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+}
