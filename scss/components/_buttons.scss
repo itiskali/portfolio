@@ -9,11 +9,12 @@
   display: block;
   margin: 1em auto 0;
   text-align: center;
-  width: 160px; }
+  width: 160px;
+}
 
 .button:hover {
   color: #0ea6b4;
-  /*blue*/ }
+}
 
 .button::after {
   content: '';
@@ -23,4 +24,5 @@
   border-bottom: 1px #bcbabb solid;
   position: absolute;
   right: -4px;
-  bottom: -4px; }
+  bottom: -4px;
+}

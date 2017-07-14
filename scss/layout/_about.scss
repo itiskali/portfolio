@@ -1,17 +1,21 @@
 .about {
   background-color: #f8f8f7;
   padding: .3em 0 1em;
-  position: relative; }
-  @media (min-width: 935px) {
-    .about {
-      background-color: #fff;
-      padding: 0 1em; } }
-  @media (min-width: 1180px) {
-    .about {
-      padding: 0 1.3em; } }
+  position: relative;
+
+  @media screen and (min-width: 935px) {
+    background-color: #fff;
+    padding: 0 1em;
+    }
+  @media screen and (min-width: 1180px) {
+    padding: 0 1.3em;
+  }
+}
+
+
 
 @media (min-width: 935px) {
-  .about-me, .about-work, .about div > h1, .about-work > h2 {
+  .about__story, .about__work, .about div > h1, .about__work > h2 {
     margin: 0;
     vertical-align: top; } }
 
@@ -53,10 +57,10 @@
 .about p {
   margin-top: 1em; }
 
-.about-work {
+.about__work {
   margin-bottom: 3.5em; }
   @media (min-width: 935px) {
-    .about-work {
+    .about__work {
       display: table-cell;
       width: 65%;
       float: left;
@@ -66,23 +70,23 @@
       margin-bottom: 0; } }
 
 @media (min-width: 935px) {
-  .about-work p {
+  .about__work p {
     padding-left: 1.7em; } }
 
 @media (min-width: 935px) {
-  .about-me {
+  .about__story {
     display: table-cell;
     float: right;
     width: 33%;
     vertical-align: middle; } }
 
 @media (min-width: 935px) {
-  .about-me p {
+  .about__story p {
     padding: .4em 1em 2em;
     text-align: left;
     line-height: 1.3em; } }
 
-.about-me > .button {
+.about__story > .button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -94,5 +98,5 @@
   width: 210px;
   padding: .5em; }
   @media (min-width: 935px) {
-    .about-me > .button {
+    .about__story > .button {
       position: relative; } }

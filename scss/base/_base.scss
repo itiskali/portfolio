@@ -13,73 +13,85 @@ html {
 
 body {
   margin: 0;
-  font: 17px/1 "ff-meta-web-pro", sans-serif; }
-  @media (min-width: 935px) {
-    body {
-      border: 10px solid #303030; } }
+  font: 17px/1 "ff-meta-web-pro", sans-serif;
+
+  @media screen and (min-width: 935px) {
+      border: 10px solid #303030;
+  }
+}
 
 iframe {
-  border: 0; }
+  border: 0;
+}
 
 h1, h2, h3, h4, p, ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: inherit;
+}
 
 li {
-  display: block; }
-
-
-h1, h2, h3, h4, p {
-  font-size: inherit; }
+  display: block;
+}
 
 strong {
   font-weight: bold; }
 
+em {
+  font-style: italic; }
+
 a {
   color: inherit;
   transition: .2s;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
   width: 100%;
   height: auto;
-  border: 0; }
+  border: 0;
+}
 
-  h1 {
-    text-transform: uppercase;
-    text-align: center; }
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  p {
-    font: 1em/1.2em Georgia, Times, "Times New Roman", serif;
-    margin: .5em 0;
-    color: #303030; }
+p {
+  font: 1em/1.2em Georgia, Times, "Times New Roman", serif;
+  margin: .5em 0;
+  color: #303030;
+}
 
-  em {
-    font-style: italic; }
+.r-br {
+  display: none;
 
-  .r-br {
-    display: none; }
-    @media (min-width: 935px) {
-      .r-br {
-        display: block; } }
+  @media screen and (min-width: 935px) {
+      display: block;
+    }
+}
 
 .hide {
-          display: none; }
+ display: none; }
 
-          hr {
-            border: 0;
-            border-bottom: 1px dashed #bcbabb;
-            margin: 1.25em 0; }
-            @media (min-width: 560px) {
-              hr {
-                display: none; } }
+.dashed-divider {
+  border: 0;
+  border-bottom: 1px dashed #bcbabb;
+  margin: 1.25em 0;
 
-                .animation {
-                  display: none; }
-                  @media (min-width: 935px) {
-                    .animation {
-                      display: table-cell; } }
+  @media screen and (min-width: 560px) {
+    display: none; }
+}
 
-                      .text-link {
-                        display: inline-block;
-                        border-bottom: 1px #d25458 solid; }
+.animation {
+  display: none;
+
+  @media screen and (min-width: 935px) {
+  display: table-cell;
+}
+}
+
+.text-link {
+  display: inline-block;
+  border-bottom: 1px #d25458 solid;
+}

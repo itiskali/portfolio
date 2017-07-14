@@ -1,6 +1,7 @@
-.portfolio, .about-me, .about-work, .contact {
+.portfolio, .about__me, .about__work, .contact {
   width: 92%;
   margin: 0 auto;
+  outline: blue 1px solid;
 }
 
 @media (min-width: 935px) {
