@@ -1,6 +1,7 @@
 /* About Styles ------------------------ */
 
 .about-section {
+  @extend %container-md;
   background-color: #f8f8f7;
   padding: .3em 0 1em;
   position: relative;
@@ -15,6 +16,8 @@
 }
 
 .about-section__header {
+  @extend %container-sm;
+  @extend %base-header;
   background-color: #e6a503;
 
   @media screen and (min-width: 935px) {
@@ -47,7 +50,7 @@
   font-size: 1.1em;
   text-transform: uppercase;
   font-weight: normal;
-  border-bottom: 1px dashed #bcbabb;
+  @extend %d-border;
   display: inline-block;
   padding: .8em 0 .1em 4%;
 
@@ -69,6 +72,7 @@
 }
 
 .about-section__story {
+  @extend %container-sm;
   @media screen and (min-width: 935px) {
     display: table-cell;
     float: right;
@@ -82,28 +86,11 @@
     padding: .4em 1em 2em;
     text-align: left;
     line-height: 1.3em;
-    outline: 1px red solid;
-  }
-}
-
-.about-section__story > .button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0 auto 1em;
-  text-transform: uppercase;
-  color: #e6a503;
-  font-weight: bold;
-  width: 210px;
-  padding: .5em;
-
-  @media screen and (min-width: 935px) {
-    position: relative;
   }
 }
 
 .about-section__work {
+  @extend %container-sm;
   margin-bottom: 3.5em;
 
   @media screen and (min-width: 935px) {

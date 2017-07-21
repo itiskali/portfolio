@@ -1,5 +1,46 @@
-// Center text
+// //Container for Small Screens
+// %container-sm {
+//   width: 92%;
+//   margin: 0 auto;
+// }
+//
+// //Container for Medium Screens
+// %container-md {
+//   @media screen and (min-width: 935px) {
+//     width: 98%;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: table;
+//     border-collapse: separate;
+//     border-spacing: 1em .5em;
+//   }
+// }
+//
+// //Container for Large Screens
+// %container-lg {
+//   @media screen and (min-width: 1180px) {
+//       border-spacing: 1.2em .7em;
+//   }
+// }
+//
+//Base Heading
+%base-heading {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #f8f8f7;
+  margin: .6em auto;
+  padding: .4em 0 .5em;
+  @extend %centered;
+  text-transform: uppercase;
+}
 
+
+// Center text
 %centered {
   text-align: center;
+}
+//
+// Dashed border
+%d-border {
+  border-bottom: 1px dashed #bcbabb;
 }

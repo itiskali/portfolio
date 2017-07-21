@@ -1,22 +1,11 @@
-/* Containers Style ------------------------ */
-
-.portfolio, .about-section__header, .about-section__story, .about-section__work, .contact {
-  width: 92%;
+.main-container {
+  width: 95%;
   margin: 0 auto;
 }
-
-@media screen and (min-width: 935px) {
-  .portfolio, .about, .contact {
-    width: 98%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 1em .5em;
-  }
-}
-@media screen and (min-width: 1180px) {
-  .portfolio, .about, .contact {
-    border-spacing: 1.2em .7em;
+.portfolio {
+  @media screen and (min-width: 560px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }

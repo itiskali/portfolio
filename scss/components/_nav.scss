@@ -1,14 +1,18 @@
 /* Navigation Styles ------------------------ */
 
 .navigation {
-  margin-top: .7em;
-  text-align: center;
+  @extend %centered;
+  margin-top: 1.5em;
   border-top: 3px #e3e3e3 double;
   border-bottom: 3px #e3e3e3 double;
 }
 
 .navigation__item {
   display: inline-block;
-  padding: .5em;
-  font-size: .9em;
+  padding: .6em .8em;
+  font-size: .95em;
+}
+
+.navigation__item:hover {
+  color: red;
 }

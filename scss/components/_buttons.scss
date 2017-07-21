@@ -1,21 +1,22 @@
 /* Button Styles ------------------------ */
 
 .button {
-  font-size: .9em;
+  @extend %centered;
+  font-size: 100%;
   font-style: italic;
   color: #303030;
   background-color: #fff;
   border: 1px solid #bcbabb;
-  padding: .4em .6em;
+  padding: .4em .6em .6em;
   position: relative;
   display: block;
-  margin: 1em auto 0;
-  text-align: center;
-  width: 160px;
+  margin: 1.2em auto 0;
+  max-width: 160px;
 }
 
 .button:hover {
   color: #0ea6b4;
+  border: 1px solid #0ea6b4;
 }
 
 .button::after {
@@ -28,3 +29,22 @@
   right: -4px;
   bottom: -4px;
 }
+
+//
+// .about-section__story > .button {
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   margin: 0 auto 1em;
+//   text-transform: uppercase;
+//   color: #e6a503;
+//   font-weight: bold;
+//   width: 210px;
+//   padding: .5em;
+//   outline: 1px red solid;
+//
+//   @media screen and (min-width: 935px) {
+//     position: relative;
+//   }
+// }
