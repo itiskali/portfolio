@@ -1,11 +1,17 @@
-.main-container {
-  width: 95%;
+.wrap-container {
+  width: 93%;
+  max-width: 1600px;
   margin: 0 auto;
+  outline: 1px red solid;
 }
 .portfolio {
-  @media screen and (min-width: 560px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
+// .portfolio__heading, .project {
+//   flex-grow: 1;
+// }

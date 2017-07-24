@@ -1,28 +1,5 @@
-// //Container for Small Screens
-// %container-sm {
-//   width: 92%;
-//   margin: 0 auto;
-// }
-//
-// //Container for Medium Screens
-// %container-md {
-//   @media screen and (min-width: 935px) {
-//     width: 98%;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     display: table;
-//     border-collapse: separate;
-//     border-spacing: 1em .5em;
-//   }
-// }
-//
-// //Container for Large Screens
-// %container-lg {
-//   @media screen and (min-width: 1180px) {
-//       border-spacing: 1.2em .7em;
-//   }
-// }
-//
+/* Extends ------------------------ */
+
 //Base Heading
 %base-heading {
   font-size: 1.4em;
@@ -33,7 +10,6 @@
   @extend %centered;
   text-transform: uppercase;
 }
-
 
 // Center text
 %centered {
