@@ -13,6 +13,9 @@ html {
 body {
   margin: 0;
   font: 17px/1.2 "ff-meta-web-pro", sans-serif; }
+  @media screen and (min-width: 935px) {
+    body {
+      border: 7px solid #303030; } }
 
 iframe {
   border: 0; }
@@ -55,6 +58,13 @@ p {
 .dashed-divider {
   border: 0;
   margin: 1.25em 0; }
+  @media screen and (min-width: 560px) {
+    .dashed-divider {
+      display: none; } }
+
+.text-link {
+  display: inline-block;
+  border-bottom: 1px #d25458 solid; }
 
 /* Extends ------------------------ */
 .portfolio__heading, .about-section__header, .contact__header {
@@ -65,7 +75,7 @@ p {
   padding: .4em 0 .5em;
   text-transform: uppercase; }
 
-.portfolio__heading, .about-section__header, .contact__header, .intro, .project-header__title, .project-info, .aside__header, .aside__subheader, .contact-icons, .email, .linked, .facebook, small, .navigation, .button {
+.portfolio__heading, .about-section__header, .contact__header, .intro, .project-header__title, .project-info, .aside__heading, .aside__subheading, .skills ul, .contact-icons, .email, .linked, .facebook, small, .navigation, .button {
   text-align: center; }
 
 .dashed-divider, .about-section__subheader {
@@ -73,16 +83,8 @@ p {
 
 .wrap-container {
   width: 93%;
-  max-width: 1600px;
-  margin: 0 auto;
-  outline: 1px red solid; }
-
-@media screen and (min-width: 768px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; } }
+  max-width: 1480px;
+  margin: 0 auto; }
 
 /* Header Section ------------------------ */
 .header {
@@ -100,12 +102,22 @@ p {
   padding-top: .3em; }
 
 /* Portfolio Section ------------------------ */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media screen and (min-width: 560px) {
+    .portfolio {
+      flex-direction: row;
+      justify-content: space-between; } }
+
 .portfolio__heading {
-  background-color: #0ea6b4; }
+  background-color: #0ea6b4;
+  flex: 1 100%; }
   .portfolio__heading:after {
     font: .8em 'themify';
     content: "\e663"; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 935px) {
     .portfolio__heading {
       margin-top: 0;
       background-color: #fff;
@@ -113,20 +125,21 @@ p {
       border: 7px #0ea6b4 solid;
       font-size: 2.7em;
       text-align: left;
-      padding-left: .42em; } }
-  @media screen and (min-width: 935px) {
-    .portfolio__heading:after {
-      content: ""; }
-    .portfolio__heading span {
-      border-bottom: 7px #0ea6b4 solid; } }
+      padding-left: .42em; }
+      .portfolio__heading:after {
+        content: ""; }
+      .portfolio__heading span {
+        border-bottom: 7px #0ea6b4 solid; } }
   @media screen and (min-width: 1180px) {
     .portfolio__heading:after {
       content: "\e661"; } }
 
 /* Individual Projects */
 .project {
-  margin: 1em 0 1.2em;
-  position: relative; }
+  flex: 1 100%; }
+  @media screen and (min-width: 560px) {
+    .project {
+      flex: 1 40%; } }
 
 .project-header {
   position: relative; }
@@ -215,15 +228,57 @@ p {
     opacity: 0;
     transition: .5s; } }
 
-/* .aside Styles ------------------------ */
+/* Aside Styles ------------------------ */
 .aside {
   background-color: #f8f8f7;
   padding: 1.3em .8em 1em;
-  margin: 1.25em 0; }
+  margin: 1.25em 0;
+  border: 1px dashed #bcbabb; }
+  @media screen and (min-width: 935px) {
+    .aside {
+      font-size: .8em;
+      vertical-align: middle; } }
+  @media screen and (min-width: 1180px) {
+    .aside {
+      font-size: 1em; } }
 
-.aside__header, .aside__subheader {
+.aside__heading, .aside__subheading {
   padding: .4em 0 .2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #0ea6b4; }
+
+.aside__heading_black {
+  color: #303030; }
+
+/* Skills Section ------------------------ */
+.skills {
+  padding-bottom: .7em; }
+
+.skills h1 {
+  margin-bottom: .6em; }
+  @media screen and (min-width: 935px) {
+    .skills h1 {
+      margin-bottom: .2em; } }
+  @media screen and (min-width: 1180px) {
+    .skills h1 {
+      padding-top: .2em; } }
+
+@media screen and (min-width: 1180px) {
+  .skills ul {
+    padding-top: .2em; } }
+
+.aside__list {
+  font-size: .9em;
+  display: inline-block;
+  padding: .3em;
+  margin-bottom: .3em; }
+
+.skills ul li::before {
+  content: url(../img/diamond.png);
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: top; }
 
 /* About Styles ------------------------ */
 .about-section {
@@ -232,18 +287,60 @@ p {
 
 .about-section__header {
   background-color: #e6a503; }
+  @media screen and (min-width: 935px) {
+    .about-section__header {
+      font-size: 2em;
+      background-color: #fff;
+      color: #e6a503;
+      border: 7px #e6a503 solid;
+      border-bottom: 0;
+      border-left: 0;
+      padding: .5em 1em .8em 0;
+      text-align: right; }
+      .about-section__header span {
+        border-bottom: 7px #e6a503 solid;
+        padding-left: .2em; } }
+  @media screen and (min-width: 1180px) {
+    .about-section__header:before {
+      font: .8em 'themify';
+      content: "\e662 "; } }
 
 .about-section__subheader {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: normal;
   display: inline-block;
-  padding: .8em 0 .12em 4%; }
+  padding: .8em 0 .12em 4%;
+  border-color: #e6a503; }
+  @media screen and (min-width: 935px) {
+    .about-section__subheader {
+      font-size: 1.5em; } }
 
 .about-section__p {
   margin-top: 1em; }
 
+@media screen and (min-width: 935px) {
+  .about-section__story {
+    display: table-cell;
+    float: right;
+    width: 33%;
+    vertical-align: middle;
+    outline: 1px red solid; } }
+
+@media screen and (min-width: 935px) {
+  .about-section__work {
+    display: table-cell;
+    width: 65%;
+    float: left;
+    background-color: #f8f8f7;
+    padding: 0.5em 2em 1em;
+    border-left: 7px #e6a503 solid;
+    margin-bottom: 0; } }
+
 /* Contact Me Section ------------------------ */
+.contact {
+  clear: both; }
+
 .contact__header {
   background-color: #d25458; }
 

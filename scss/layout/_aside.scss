@@ -1,31 +1,30 @@
-/* .aside Styles ------------------------ */
+/* Aside Styles ------------------------ */
 
 .aside {
   background-color: #f8f8f7;
   padding: 1.3em .8em 1em;
   margin: 1.25em 0;
+  border: 1px dashed #bcbabb;
 
-  // @media screen and (min-width: 935px) {
-  //   display: table-cell;
-  //   font-size: .8em;
-  //   vertical-align: middle;
-  // }
-  // @media screen and (min-width: 1180px) {
-  //   font-size: 1em;
-  // }
+  @media screen and (min-width: 935px) {
+    font-size: .8em;
+    vertical-align: middle;
+  }
+  @media screen and (min-width: 1180px) {
+    font-size: 1em;
+  }
 }
 
-.aside__header, .aside__subheader {
+.aside__heading, .aside__subheading {
   @extend %centered;
   padding: .4em 0 .2em;
   text-transform: uppercase;
-
-  // color: #0ea6b4;
+  color: #0ea6b4;
 }
-//
-// .aside__header_black {
-//   color: #303030;
-// }
+
+.aside__heading_black {
+  color: #303030;
+}
 //
 // .aside p {
 //   @extend %centered;

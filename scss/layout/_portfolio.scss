@@ -1,15 +1,25 @@
 /* Portfolio Section ------------------------ */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  @media screen and (min-width: 560px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .portfolio__heading {
   @extend %base-heading;
   background-color: #0ea6b4;
+  flex: 1 100%;
 
   &:after {
     font: .8em 'themify';
     content: "\e663";
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 935px) {
     margin-top: 0;
     background-color: #fff;
     color: #0ea6b4;
@@ -17,9 +27,6 @@
     font-size: 2.7em;
     text-align: left;
     padding-left: .42em;
-  }
-
-  @media screen and (min-width: 935px) {
 
     &:after {
       content: "";
@@ -41,17 +48,27 @@
 /* Individual Projects */
 
 .project {
-  margin: 1em 0 1.2em;
-  position: relative;
+  // margin-bottom: 1em;
+  flex: 1 100%;
+  // margin: 1em 0 1.2em;
+  // position: relative;
+
+  @media screen and (min-width: 560px) {
+    flex: 1 40%;
+  }
+
+  @media screen and (min-width: 935px) {
+    // flex: 1 27%;
+    // margin: .7em;
+  }
 }
+
 .project-header {
   position: relative;
-
   &:hover .project-header__title {
     color: #0ea6b4;
    transition: .3s;
   }
-
   &::before {
     display: block;
     content: '';

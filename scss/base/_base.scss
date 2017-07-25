@@ -17,9 +17,9 @@ body {
   margin: 0;
   font: 17px/1.2 "ff-meta-web-pro", sans-serif;
 
-  // @media screen and (min-width: 935px) {
-  //   border: 10px solid #303030;
-  // }
+  @media screen and (min-width: 935px) {
+    border: 7px solid #303030;
+  }
 }
 
 iframe {
@@ -79,12 +79,12 @@ p {
   @extend %d-border;
   margin: 1.25em 0;
 
-  // @media screen and (min-width: 560px) {
-  //   display: none;
-  // }
+  @media screen and (min-width: 560px) {
+    display: none;
+  }
 }
-//
-// .text-link {
-//   display: inline-block;
-//   border-bottom: 1px #d25458 solid;
-// }
+
+.text-link {
+  display: inline-block;
+  border-bottom: 1px #d25458 solid;
+}
