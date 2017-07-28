@@ -4,7 +4,7 @@
 %base-heading {
   font-size: 1.4em;
   font-weight: normal;
-  color: #f8f8f7;
+  color: $color-backg-sec;
   margin: .6em auto;
   padding: .4em 0 .5em;
   @extend %centered;
@@ -18,5 +18,5 @@
 //
 // Dashed border
 %d-border {
-  border-bottom: 1px dashed #bcbabb;
+  border-bottom: 1px dashed $color-border;
 }

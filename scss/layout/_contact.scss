@@ -12,15 +12,15 @@
 
 .contact__header {
   @extend %base-heading;
-  background-color: #d25458;
+  background-color: $color-tert;
 
   // @media screen and (min-width: 935px) {
   //   display: table-cell;
   //   width: 30%;
   //   font-size: 2em;
-  //   background-color: #fff;
-  //   color: #d25458;
-  //   border: 7px #d25458 solid;
+  //   background-color: $color-backg-main;
+  //   color: $color-tert;
+  //   border: 7px $color-tert solid;
   //   vertical-align: middle;
   // }
 }
@@ -78,8 +78,8 @@
 }
 
 .email, .linked, .facebook {
-  background-color: #f8f8f7;
-  border: 1px #bcbabb solid;
+  background-color: $color-backg-sec;
+  border: 1px $color-border solid;
   position: relative;
   @extend %centered;
 
@@ -98,7 +98,7 @@
 //   top: 20%;
 //   left: 55%;
 //   margin-left: -30px;
-//   color: #d25458;
+//   color: $color-tert;
 //   padding: 0;
 //
 //   @media screen and (min-width: 560px) {

@@ -1,12 +1,12 @@
 /* About Styles ------------------------ */
 
 .about-section {
-  background-color: #f8f8f7;
+  background-color: $color-backg-sec;
   padding: .3em 0 1em;
   // position: relative;
 
   // @media screen and (min-width: 935px) {
-  //   background-color: #fff;
+  //   background-color: $color-backg-main;
   //   padding: 0 1em;
   // }
   // @media screen and (min-width: 1180px) {
@@ -16,20 +16,20 @@
 //
 .about-section__header {
   @extend %base-heading;
-  background-color: #e6a503;
+  background-color: $color-sec;
 
   @media screen and (min-width: 935px) {
     font-size: 2em;
-    background-color: #fff;
-    color: #e6a503;
-    border: 7px #e6a503 solid;
+    background-color: $white;
+    color: $color-sec;
+    border: 7px $color-sec solid;
     border-bottom: 0;
     border-left: 0;
     padding: .5em 1em .8em 0;
     text-align: right;
 
     span {
-      border-bottom: 7px #e6a503 solid;
+      border-bottom: 7px $color-sec solid;
       padding-left: .2em;
     }
   }
@@ -50,7 +50,7 @@
   font-weight: normal;
   display: inline-block;
   padding: .8em 0 .12em 4%;
-  border-color: #e6a503;
+  border-color: $color-sec;
 
   @media screen and (min-width: 935px) {
     font-size: 1.5em;
@@ -92,9 +92,9 @@
     display: table-cell;
     width: 65%;
     float: left;
-    background-color: #f8f8f7;
+    background-color: $color-backg-sec;
     padding: 0.5em 2em 1em;
-    border-left: 7px #e6a503 solid;
+    border-left: 7px $color-sec solid;
     margin-bottom: 0;
   }
 }

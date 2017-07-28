@@ -1,10 +1,10 @@
 /* Aside Styles ------------------------ */
 
 .aside {
-  background-color: #f8f8f7;
+  background-color: $color-backg-sec;
   padding: 1.3em .8em 1em;
   margin: 1.25em 0;
-  border: 1px dashed #bcbabb;
+  border: 1px dashed $color-border;
 
   @media screen and (min-width: 935px) {
     font-size: .8em;
@@ -19,11 +19,11 @@
   @extend %centered;
   padding: .4em 0 .2em;
   text-transform: uppercase;
-  color: #0ea6b4;
+  color: $color-prim;
 }
 
 .aside__heading_black {
-  color: #303030;
+  color: $color-text-base;
 }
 //
 // .aside p {

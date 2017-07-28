@@ -1,0 +1,32 @@
+/* Variables ------------------------ */
+
+// Descriptive color variables
+
+$white              : #fff;
+$black              : #000;
+$grey               : #303030;
+$pale-slate         : #bcbabb;
+$almost-white       : #f8f8f7;
+$chestnut-rose      : #d25458;
+$blue-chill         : #0ea6b4;
+$corn               : #e6a503;
+
+// Functional color variables
+
+$color-prim         : $blue-chill;
+$color-sec          : $corn;
+$color-tert         : $chestnut-rose;
+
+$color-text-base    : $grey;
+
+$color-border       : $pale-slate;
+$color-border-light : rgba($color-border, .4);
+
+
+$color-backg-main  : $white;
+$color-backg-sec   : $almost-white;
+
+// Font Stacks
+
+$stack-sans-serif  : "ff-meta-web-pro", sans-serif;
+$stack-serif       : Georgia, Times, "Times New Roman", serif;

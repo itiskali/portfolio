@@ -6,12 +6,11 @@
 
   @media screen and (min-width: 560px) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 .portfolio__heading {
   @extend %base-heading;
-  background-color: #0ea6b4;
+  background-color: $color-prim;
   flex: 1 100%;
 
   &:after {
@@ -21,9 +20,9 @@
 
   @media screen and (min-width: 935px) {
     margin-top: 0;
-    background-color: #fff;
-    color: #0ea6b4;
-    border: 7px #0ea6b4 solid;
+    background-color: $color-backg-main;
+    color: $color-prim;
+    border: 7px $color-prim solid;
     font-size: 2.7em;
     text-align: left;
     padding-left: .42em;
@@ -33,7 +32,7 @@
     }
 
     span {
-      border-bottom: 7px #0ea6b4 solid;
+      border-bottom: 7px $color-prim solid;
     }
   }
 
@@ -50,15 +49,15 @@
 .project {
   // margin-bottom: 1em;
   flex: 1 100%;
-  // margin: 1em 0 1.2em;
+  margin: 1em;
   // position: relative;
 
   @media screen and (min-width: 560px) {
-    flex: 1 40%;
+    flex: 1 1 40%;
   }
 
   @media screen and (min-width: 935px) {
-    // flex: 1 27%;
+    flex: 1 1 30%;
     // margin: .7em;
   }
 }
@@ -66,7 +65,7 @@
 .project-header {
   position: relative;
   &:hover .project-header__title {
-    color: #0ea6b4;
+    color: $color-prim;
    transition: .3s;
   }
   &::before {
@@ -82,9 +81,9 @@
 .project-header__title {
   @extend %centered;
   font-size: 1.2em;
-  color: #303030;
+  color: $color-text-base;
   opacity: 0.85;
-  background-color: #fff;
+  background-color: $color-backg-main;
   position: absolute;
   bottom: 7px;
   left: 0;
@@ -104,7 +103,7 @@
 //Same as Background for header
 .project-info {
   @extend %centered;
-  background-color: #f8f8f7;
+  background-color: $color-backg-sec;
   padding: 1em 1em 0;
   margin-top: .2em;
   position: relative;
@@ -115,7 +114,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 1px #0ea6b4 solid;
+    border: 1px $color-prim solid;
   }
 
   &::before {
@@ -151,7 +150,7 @@
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
-  color: #0ea6b4;
+  color: $color-prim;
   padding-bottom: .4em;
   display: block;
 }

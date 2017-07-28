@@ -3,8 +3,8 @@
 .navigation {
   @extend %centered;
   margin-top: 1.5em;
-  border-top: 3px #e3e3e3 double;
-  border-bottom: 3px #e3e3e3 double;
+  border-top: 3px $color-border-light double;
+  border-bottom: 3px $color-border-light double;
 }
 
 .navigation__item {

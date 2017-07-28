@@ -15,10 +15,10 @@ html {
 
 body {
   margin: 0;
-  font: 17px/1.2 "ff-meta-web-pro", sans-serif;
+  font: 16px/1.25 $stack-sans-serif; //line-height: 20px;
 
   @media screen and (min-width: 935px) {
-    border: 7px solid #303030;
+    border: 7px solid $color-text-base;
   }
 }
 
@@ -48,6 +48,16 @@ a {
   color: inherit;
   transition: .2s;
   text-decoration: none;
+
+  &:link {
+
+  }
+  &:visited {
+
+  }
+  &:hover {
+
+  }
 }
 
 img {
@@ -57,9 +67,9 @@ img {
 }
 
 p {
-  font: 1em/1.4 Georgia, Times, "Times New Roman", serif;
-  margin: .5em 0;
-  color: #303030;
+  font: 1em/1.25 Georgia, Times, "Times New Roman", serif;
+  margin: .625em 0;
+  color: $color-text-base;
 }
 
 .r-br {
@@ -86,5 +96,5 @@ p {
 
 .text-link {
   display: inline-block;
-  border-bottom: 1px #d25458 solid;
+  border-bottom: 1px $color-tert solid;
 }
