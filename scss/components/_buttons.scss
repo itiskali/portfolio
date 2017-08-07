@@ -7,11 +7,12 @@
   color: $color-text-base;
   background-color: $color-backg-sec;
   border: 1px solid $color-border;
-  padding: .4em .6em .6em;
+  padding: em(7) .6em .6em;
   position: relative;
   display: block;
-  margin: 1.2em auto 0;
+  margin: em(26) auto 0;
   max-width: 160px;
+  outline: 1px red solid;
 
   &:hover {
     color: $color-prim;

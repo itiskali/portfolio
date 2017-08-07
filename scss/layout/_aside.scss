@@ -3,12 +3,19 @@
 .aside {
   background-color: $color-backg-sec;
   padding: 1.3em .8em 1em;
-  margin: 1.25em 0;
+  margin: em(26) 0;
   border: 1px dashed $color-border;
 
-  @media screen and (min-width: 935px) {
+  @media screen and (min-width: 600px) {
+    margin: em(13);
+    flex-basis: em(274);
+    flex-grow: 1;
+  }
+
+  @media screen and (min-width: 960px) {
     font-size: .8em;
     vertical-align: middle;
+    flex-basis: em(214);
   }
   @media screen and (min-width: 1180px) {
     font-size: 1em;

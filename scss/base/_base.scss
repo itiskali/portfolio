@@ -15,7 +15,9 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1.25 $stack-sans-serif; //line-height: 20px;
+  font: 17px $stack-serif;
+  line-height: em(26);
+  color: $color-text-base;
 
   @media screen and (min-width: 935px) {
     border: 7px solid $color-text-base;
@@ -46,7 +48,7 @@ em {
 
 a {
   color: inherit;
-  transition: .2s;
+  transition: .3s;
   text-decoration: none;
 
   &:link {
@@ -67,9 +69,7 @@ img {
 }
 
 p {
-  font: 1em/1.25 Georgia, Times, "Times New Roman", serif;
-  margin: .625em 0;
-  color: $color-text-base;
+  margin: 0 0 em(26) 0;
 }
 
 .r-br {
@@ -84,15 +84,17 @@ p {
 //  display: none;
 // }
 //
-.dashed-divider {
-  border: 0;
-  @extend %d-border;
-  margin: 1.25em 0;
 
-  @media screen and (min-width: 560px) {
-    display: none;
-  }
-}
+// Dashed border for articles
+// .dashed-divider {
+//   border: 0;
+//   @extend %d-border;
+//   margin: 0 0 1.5294em 0;
+//
+//   @media screen and (min-width: 560px) {
+//     display: none;
+//   }
+// }
 
 .text-link {
   display: inline-block;

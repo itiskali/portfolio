@@ -1,25 +1,29 @@
 /* Portfolio Section ------------------------ */
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media screen and (min-width: 560px) {
-    flex-direction: row;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
+
 .portfolio__heading {
   @extend %base-heading;
   background-color: $color-prim;
-  flex: 1 100%;
 
   &:after {
     font: .8em 'themify';
     content: "\e663";
   }
 
-  @media screen and (min-width: 935px) {
-    margin-top: 0;
+  @media screen and (min-width: 600px) {
+      flex-grow: 1;
+      flex-basis: 100%;
+      margin: em(13);
+  }
+
+  @media screen and (min-width: 960px) {
+    flex-grow: 1;
+    flex-basis: 214px;
     background-color: $color-backg-main;
     color: $color-prim;
     border: 7px $color-prim solid;
@@ -48,35 +52,46 @@
 
 .project {
   // margin-bottom: 1em;
-  flex: 1 100%;
-  margin: 1em;
+  // flex: 1 100%;
+  margin: em(26) auto;
   // position: relative;
 
-  @media screen and (min-width: 560px) {
-    flex: 1 1 40%;
+  @media screen and (min-width: 600px) {
+    margin: em(13);
+    flex-basis: em(274);
+    flex-grow: 1;
   }
 
-  @media screen and (min-width: 935px) {
-    flex: 1 1 30%;
+  @media screen and (min-width: 960px) {
+    flex-grow: 1.4;
+    // flex: 1 1 30%;
     // margin: .7em;
   }
 }
 
-.project-header {
-  position: relative;
-  &:hover .project-header__title {
-    color: $color-prim;
-   transition: .3s;
-  }
-  &::before {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 99%;
-    box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.3);
+.project-l {
+  @media screen and (min-width: 960px) {
+    flex-grow: 1.7;
+    // flex: 1 1 30%;
+    // margin: .7em;
   }
 }
+
+// .project-header {
+//   position: relative;
+//   &:hover .project-header__title {
+//     color: $color-prim;
+//    transition: .3s;
+//   }
+//   &::before {
+//     display: block;
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 99%;
+//     box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.3);
+//   }
+// }
 
 .project-header__title {
   @extend %centered;

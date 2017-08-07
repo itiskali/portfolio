@@ -2,7 +2,7 @@
 
 .navigation {
   @extend %centered;
-  margin-top: 1.5em;
+  margin-top: em(26);
   border-top: 3px $color-border-light double;
   border-bottom: 3px $color-border-light double;
 }
@@ -10,9 +10,9 @@
 .navigation__item {
   display: inline-block;
   padding: .6em .8em;
-  font-size: .95em;
+  font-size: 1em;
 
   &:hover {
-    color: red;
+    color: $color-prim;
   }
 }

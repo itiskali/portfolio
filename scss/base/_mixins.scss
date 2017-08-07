@@ -8,3 +8,12 @@
   font-weight: $weight;
   color: $color;
 }
+
+
+// and modified to accept a base context variable
+
+$browser-context: 17;
+
+@function em($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1em;
+}

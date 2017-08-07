@@ -1,12 +1,15 @@
 /* Extends ------------------------ */
+// Vertical Rhythm calculated with https://drewish.com/tools/vertical-rhythm/
+
+//Recalculate base rhythm
 
 //Base Heading
 %base-heading {
-  font-size: 1.4em;
+  // font: 24px $stack-sans-serif;
   font-weight: normal;
   color: $color-backg-sec;
-  margin: .6em auto;
-  padding: .4em 0 .5em;
+  // margin: em(13) auto;
+  padding: .54165em 0 .7em;
   @extend %centered;
   text-transform: uppercase;
 }

@@ -2,18 +2,18 @@
 
 .header {
   background-color: $color-backg-sec;
-  padding: 1.5em 1em .5em;
+  padding: em(26) 0 0;
 }
 
 .logo {
   max-width: 423px;
-  margin: 0 auto;
+  margin: 0 auto em(13);
 }
 
 .intro {
   @extend %centered;
-  font-size: .9em;
+  font-size: em(15);
+  line-height: em(13);
   font-style: italic;
   color: $color-sec;
-  padding-top: .3em;
 }
