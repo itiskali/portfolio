@@ -17,7 +17,7 @@ body {
   font: 16px/1.25 "ff-meta-web-pro", sans-serif; }
   @media screen and (min-width: 935px) {
     body {
-      border: 7px solid yellow; } }
+      border: 7px solid #303030; } }
 
 iframe {
   border: 0; }
