@@ -3,17 +3,6 @@
 
 //Recalculate base rhythm
 
-//Base Heading
-%base-heading {
-  // font: 24px $stack-sans-serif;
-  font-weight: normal;
-  color: $color-backg-sec;
-  // margin: em(13) auto;
-  padding: .54165em 0 .7em;
-  @extend %centered;
-  text-transform: uppercase;
-}
-
 // Center text
 %centered {
   text-align: center;
@@ -22,4 +11,15 @@
 // Dashed border
 %d-border {
   border-bottom: 1px dashed $color-border;
+}
+
+//Base Heading
+%base-heading {
+  font: em(24) $stack-sans-serif;
+  font-weight: normal;
+  color: $color-backg-sec;
+  margin: em(13) auto;
+  padding: em(6.5) 0;
+  @extend %centered;
+  text-transform: uppercase;
 }

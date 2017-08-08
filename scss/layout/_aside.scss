@@ -2,42 +2,45 @@
 
 .aside {
   background-color: $color-backg-sec;
-  padding: 1.3em .8em 1em;
-  margin: em(26) 0;
   border: 1px dashed $color-border;
+  margin: em(13);
+  padding: 0 em(13);
+  font-size: em(17);
+  @extend %centered;
 
-  @media screen and (min-width: 600px) {
-    margin: em(13);
-    flex-basis: em(274);
+  @media #{$brk-narrow} {
+    flex-basis: calc(100% - 52px);
     flex-grow: 1;
   }
-
-  @media screen and (min-width: 960px) {
-    font-size: .8em;
-    vertical-align: middle;
-    flex-basis: em(214);
+  @media #{$brk-medium} {
+    flex-basis: calc((100% / 2) - 52px);
   }
-  @media screen and (min-width: 1180px) {
-    font-size: 1em;
+  @media #{$brk-wide} {
+    flex-basis: 15%;
+  }
+}
+.aside_clients {
+  @media #{$brk-narrow} {
+    order: 1;
   }
 }
 
-.aside__heading, .aside__subheading {
-  @extend %centered;
-  padding: .4em 0 .2em;
-  text-transform: uppercase;
+.aside__heading {
+  @extend %base-heading;
   color: $color-prim;
+  font-size: em(17);
 }
+.aside__list {
+  padding-bottom: em(26);
+}
+// .aside__list::before {
+//   content: url(../img/diamond.png);
+//   width: 15px;
+//   height: 15px;
+//   display: inline-block;
+//   vertical-align: top;
+// }
 
-.aside__heading_black {
-  color: $color-text-base;
+.aside__client-list {
+  @extend %d-border;
 }
-//
-// .aside p {
-//   @extend %centered;
-// }
-//
-// .aside p:nth-child(2) {
-//   padding-bottom: 1em;
-//   @extend %d-border;
-// }

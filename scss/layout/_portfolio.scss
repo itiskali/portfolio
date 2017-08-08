@@ -1,8 +1,14 @@
 /* Portfolio Section ------------------------ */
 .portfolio {
-  @media screen and (min-width: 600px) {
+  max-width: 1440px;
+
+  @media #{$brk-narrow} {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media #{$brk-wide} {
+    margin: em(26) auto em(39);
   }
 }
 
@@ -15,24 +21,26 @@
     content: "\e663";
   }
 
-  @media screen and (min-width: 600px) {
-      flex-grow: 1;
-      flex-basis: 100%;
-      margin: em(13);
+  @media #{$brk-narrow} {
+    flex-grow: 1;
+    flex-basis: 100%;
   }
 
-  @media screen and (min-width: 960px) {
-    flex-grow: 1;
-    flex-basis: 214px;
+  @media #{$brk-wide} {
+    flex-basis: 15%;
     background-color: $color-backg-main;
     color: $color-prim;
-    border: 7px $color-prim solid;
-    font-size: 2.7em;
+    border: 9px $color-prim solid;
+    font-size: em(48);
     text-align: left;
-    padding-left: .42em;
+    padding: 0;
+    margin: 13px;
+    line-height: 1em;
+    padding-left: 26px;
+    padding-top: 26px;
 
     &:after {
-      content: "";
+    content: "\e661";
     }
 
     span {
@@ -40,89 +48,60 @@
     }
   }
 
-  @media screen and (min-width: 1180px) {
-
-    &:after {
-    content: "\e661";
-    }
-  }
 }
+
 
 /* Individual Projects */
 
 .project {
-  // margin-bottom: 1em;
-  // flex: 1 100%;
-  margin: em(26) auto;
-  // position: relative;
+  position: relative;
+  margin: em(26) em(13);
 
-  @media screen and (min-width: 600px) {
-    margin: em(13);
-    flex-basis: calc(100*);
+  @media #{$brk-narrow} {
+    flex-basis: calc((100% / 2) - 52px);
     flex-grow: 1;
+    margin: em(13);
   }
 
-  @media screen and (min-width: 960px) {
-    flex-grow: 1.4;
-    // flex: 1 1 30%;
-    // margin: .7em;
-  }
-}
-
-.project-l {
-  @media screen and (min-width: 960px) {
-    flex-grow: 1.7;
-    // flex: 1 1 30%;
-    // margin: .7em;
+  @media #{$brk-wide} {
+    flex-basis: calc((100% / 3) - 52px);
   }
 }
 
-// .project-header {
-//   position: relative;
-//   &:hover .project-header__title {
-//     color: $color-prim;
-//    transition: .3s;
-//   }
-//   &::before {
-//     display: block;
-//     content: '';
-//     position: absolute;
-//     width: 100%;
-//     height: 99%;
-//     box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.3);
-//   }
-// }
+.project-header:hover {
+  @media #{$brk-medium} {
+    opacity: 0;
+    transition: .5s;
+  }
+}
 
-.project-header__title {
-  @extend %centered;
-  font-size: 1.2em;
+.project-header__link {
+  display: block;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8px);
+    box-shadow: inset 0px 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.project-info__title {
+  @extend %base-heading;
+  font-size: em(20);
   color: $color-text-base;
-  opacity: 0.85;
-  background-color: $color-backg-main;
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 95%;
-  padding: .3em 0 .4em;
-  text-transform: uppercase;
-
-  @media screen and (min-width: 935px) {
-    bottom: 12px;
-    width: 95%;
-    padding: .4em 0 .5em;
-  }
+  margin:0;
+  padding: em(13);
 }
 
-//Same as Background for header
 .project-info {
+  position: relative;
   @extend %centered;
   background-color: $color-backg-sec;
-  padding: 1em 1em 0;
-  margin-top: .2em;
-  position: relative;
-  padding-bottom: 1.2em;
+  padding-bottom: em(26);
 
   &::before, &::after {
     content: "";
@@ -146,42 +125,19 @@
     border-left: 0;
   }
 
-  @media screen and (min-width: 935px) {
+  @media #{$brk-medium} {
     z-index: -1;
     position: absolute;
-    top: -3px;
+    top: 0;
     width: 100%;
-    height: 98%;
-    padding-top: 13%;
-  }
-  @media (min-width: 935px) {
-    padding-top: 15%;
-    font-size: 1.1em;
+    height: 97%;
+    padding-top: 3%;
   }
 
 }
 
 .project-info__heading {
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   color: $color-prim;
-  padding-bottom: .4em;
-  display: block;
-}
-
-.project-info__role {
-  display: inline;
-}
-
-.project-header {
-  @media screen and (min-width: 935px) {
-    display: block; }
-}
-
-.project-header:hover {
-  @media screen and (min-width: 935px) {
-    opacity: 0;
-    transition: .5s;
-  }
 }

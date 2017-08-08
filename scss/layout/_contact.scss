@@ -1,133 +1,70 @@
 /* Contact Me Section ------------------------ */
 .contact {
-  clear: both;
+  @media #{$brk-wide} {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    outline: 1px red solid;
+    margin: 0 auto;
+  }
 }
-//
-// .contact div {
-//   @media screen and (min-width: 935px) {
-//     width: 100%;
-//     display: table;
-//   }
-// }
-
 .contact__header {
   @extend %base-heading;
   background-color: $color-tert;
 
-  // @media screen and (min-width: 935px) {
-  //   display: table-cell;
-  //   width: 30%;
-  //   font-size: 2em;
-  //   background-color: $color-backg-main;
-  //   color: $color-tert;
-  //   border: 7px $color-tert solid;
-  //   vertical-align: middle;
-  // }
-}
-//
-// .contact__header:after {
-//   @media screen and (min-width: 935px) {
-//     font: .8em 'themify';
-//     content: "\e661";
-//     padding-left: .2em;
-//   }
-// }
-//
-.contact-icons {
-  margin: 0 auto;
-  @extend %centered;
-
-  // @media screen and (min-width: 935px) {
-  //   display: table-cell;
-  //   width: 75%;
-  // }
-}
-//
-.contact-icons__item {
-  @media screen and (min-width: 560px) {
-    margin-right: 1%;
+  @media #{$brk-wide} {
+    width: 15%;
+    font-size: 2em;
+    background-color: $color-backg-main;
+    color: $color-tert;
+    border: 7px $color-tert solid;
+    vertical-align: middle;
   }
 }
-// .contact ul li:last-child {
-//   @media screen and (min-width: 560px) {
-//     margin-right: 0;
-//   }
-// }
-// .contact ul li:nth-child(2) {
-//   margin-bottom: 1em;
-//
-//   @media (min-width: 560px) {
-//     margin-bottom: 0;
-//   }
-// }
-//
-.contact div ul li a {
-  display: block;
-  height: 100%;
+
+.contact-icons {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.email {
-  width: 65%;
-  height: 186px;
-  float: right;
-}
-
-.linked, .facebook {
-  width: 30%;
-  height: 85px;
-}
-
-.email, .linked, .facebook {
+.contact-icons__item {
+  width: 86px;
+  height: 86px;
   background-color: $color-backg-sec;
   border: 1px $color-border solid;
   position: relative;
-  @extend %centered;
-
-  @media screen and (min-width: 560px) {
-    float: none;
-    display: inline-block;
-    width: 32%;
-    height: 120px;
-  }
+  margin: em(13);
+  flex-grow: 1;
+  color: $color-tert;
 }
-//
-// .ti-linkedin:after, .ti-facebook:after, .ti-email:after {
-//   font: 3em 'themify';
-//   content: "\e735";
-//   position: absolute;
-//   top: 20%;
-//   left: 55%;
-//   margin-left: -30px;
-//   color: $color-tert;
-//   padding: 0;
-//
-//   @media screen and (min-width: 560px) {
-//     top: 25%;
-//     font-size: 3.2em;
-//     margin-left: -35px;
-//   }
-// }
-//
-// .ti-facebook:after {
-//   content: "\e741";
-// }
-//
-// .ti-email:after {
-//   font-size: 5em;
-//   content: "\e75a";
-//   top: 25%;
-//   margin-left: -55px;
-//
-//   @media screen and (min-width: 560px) {
-//     top: 15%;
-//     margin-left: -50px;
-//   }
-// }
-//
-small {
-  @extend %centered;
-  font-size: .6em;
+
+.ti-email:after, .ti-linkedin:after, .ti-dribbble:after,.ti-github:after  {
+    font: em(50) 'themify';
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  margin-left: -30px;
+  padding: 0;
+}
+
+.ti-email:after {
+  content: "\e75a";
+}
+
+.ti-linkedin:after {
+  content: "\e735";
+}
+.ti-dribbble:after  {
+  content: "\e743";
+}
+.ti-github:after {
+  content: "\e73f";
+}
+
+.copyright {
   display: block;
-  padding: 6em 0 2em;
-  clear: both;
+  font-size: em(10);
+  @extend %centered;
+  padding: em(26) 0;
 }

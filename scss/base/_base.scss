@@ -18,10 +18,6 @@ body {
   font: 17px $stack-serif;
   line-height: em(26);
   color: $color-text-base;
-
-  @media screen and (min-width: 935px) {
-    border: 7px solid $color-text-base;
-  }
 }
 
 iframe {
@@ -75,26 +71,10 @@ p {
 .r-br {
   display: none;
 
-  @media screen and (min-width: 935px) {
+  @media #{$brk-wide} {
     display: block;
   }
 }
-//
-// .hide {
-//  display: none;
-// }
-//
-
-// Dashed border for articles
-// .dashed-divider {
-//   border: 0;
-//   @extend %d-border;
-//   margin: 0 0 1.5294em 0;
-//
-//   @media screen and (min-width: 560px) {
-//     display: none;
-//   }
-// }
 
 .text-link {
   display: inline-block;

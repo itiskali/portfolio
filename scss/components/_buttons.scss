@@ -1,18 +1,17 @@
 /* Button Styles ------------------------ */
 
 .button {
+  font: em(15) $stack-sans-serif;
   @extend %centered;
-  font-size: 100%;
   font-style: italic;
-  color: $color-text-base;
-  background-color: $color-backg-sec;
+  background: $color-backg-main;
   border: 1px solid $color-border;
   padding: em(7) .6em .6em;
   position: relative;
   display: block;
   margin: em(26) auto 0;
-  max-width: 160px;
-  outline: 1px red solid;
+  max-width: 200px;
+  cursor: grabbing;
 
   &:hover {
     color: $color-prim;
@@ -32,21 +31,17 @@
 
 }
 
-//
-// .about-section__story > .button {
-//   position: absolute;
-//   bottom: 0;
-//   right: 0;
-//   left: 0;
-//   margin: 0 auto 1em;
-//   text-transform: uppercase;
-//   color: e6a503;
-//   font-weight: bold;
-//   width: 210px;
-//   padding: .5em;
-//   outline: 1px red solid;
-//
-//   @media screen and (min-width: 935px) {
-//     position: relative;
-//   }
-// }
+
+.about-section__story > .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto 1em;
+  text-transform: uppercase;
+  color: e6a503;
+  font-weight: bold;
+  width: 210px;
+  padding: .5em;
+  outline: 1px red solid;
+}

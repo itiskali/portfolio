@@ -2,18 +2,42 @@
 
 .header {
   background-color: $color-backg-sec;
-  padding: em(26) 0 0;
+  padding: em(26) em(13) 0;
 }
 
 .logo {
   max-width: 423px;
-  margin: 0 auto em(13);
+  margin: 0 auto;
 }
 
 .intro {
   @extend %centered;
-  font-size: em(15);
-  line-height: em(13);
+  font-size: em(13);
   font-style: italic;
   color: $color-sec;
+
+  @media #{$brk-narrow} {
+    font-size: em(16);
+  }
+}
+
+/* Navigation Styles ------------------------ */
+
+.navigation {
+  @extend %centered;
+  border-top: 3px $color-border-light double;
+  border-bottom: 3px $color-border-light double;
+}
+
+.navigation__item {
+  display: inline-block;
+  padding: em(10) em(13);
+
+  &:hover {
+    color: $color-prim;
+  }
+
+  @media #{$brk-wide} {
+    font-size: em(18);
+  }
 }

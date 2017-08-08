@@ -30,3 +30,9 @@ $color-backg-sec   : $almost-white;
 
 $stack-sans-serif  : "ff-meta-web-pro", Futura, "Trebuchet MS", Arial, sans-serif;
 $stack-serif       : Georgia, Times, "Times New Roman", serif;
+
+// Media Query Breakpoints
+
+$brk-narrow        : '(min-width: 660px)';
+$brk-medium        : '(min-width: 860px)';
+$brk-wide          : '(min-width: 1180px)';
