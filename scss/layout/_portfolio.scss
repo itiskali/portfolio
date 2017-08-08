@@ -58,7 +58,7 @@
 
   @media screen and (min-width: 600px) {
     margin: em(13);
-    flex-basis: em(274);
+    flex-basis: calc(100*);
     flex-grow: 1;
   }
 

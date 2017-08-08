@@ -134,7 +134,7 @@ p {
   @media screen and (min-width: 600px) {
     .project {
       margin: 0.7647058824em;
-      flex-basis: 16.1176470588em;
+      flex-basis: calc(100*);
       flex-grow: 1; } }
   @media screen and (min-width: 960px) {
     .project {
